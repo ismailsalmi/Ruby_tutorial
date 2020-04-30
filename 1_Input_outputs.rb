@@ -1,4 +1,4 @@
-# Output function
+# Output functions
 full_name = "ismail salmi"         # Output ismail
 puts full_name                     # Output ismail salmi
 puts full_name                     # Output ismail salmi
