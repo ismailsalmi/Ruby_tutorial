@@ -1,46 +1,38 @@
-puts "slami"
 myName = "ismail"
-puts myName.upcase
-puts myName.downcase
-puts myName.capitalize
-puts myName.reverse
-puts myName.rstrip
-puts myName.lstrip
-puts myname.strip
-puts myName.length
-puts myName.size
-puts myName.replace "salim"
-puts myName.sub 's', 'h'
-puts myName * 4
-puts myName.gsub! /([isil])/, '*'
-puts myName.gsub! /([isma])/, '__'
-puts myName.chr
-puts "ismailSalmi1992" =~ /\d/ 
-puts "ismailSalmi1992" =~ 77
-puts myName <=> "   ismail   "
-puts myName <=> "salmi"
-puts myName <=> 5
-puts myName.eql? "ismail"
-puts myName.eql? "   ismail   "
-puts myName << "Salmi"
-puts myName << " Ismail!"
-puts myName.center 16
-puts myName.center(50, "50")
-puts myName.strip.center(7, "Salmi")
-puts myName === "ismail"
-puts myName === "   ismail   "
-puts myName == "ismail"
-puts myName == "   ismail   "
-puts myName.hex
-puts "-20161505".strip.hex
-puts myName.delete "is"
-puts myName.delete 'l'
-puts myName.delete 'ml'
-puts myName.inspect
-puts myName.strip.inspect
-puts myName.concat "Salmi", 11
-puts myName.codepoints
-puts myName.include? 'i'
-puts myName.include? 'n'
-puts myName.each_char{|b| print b, ' ' } 
-puts myName.class
+puts myName.upcase                       # Output ISMAIL
+puts myName.downcase                     # Output ismail
+puts myName.capitalize                   # Output Ismail
+puts myName.reverse                      # Output liamsi     
+puts myname.strip                        # Output remove spaces      
+puts myName.rstrip                       # Output Right remove spaces  
+puts myName.lstrip                       # Output left remove spaces   
+puts myName.length                       # Output 6
+puts myName.size                         # Output 6
+puts myName.replace "salim"              # Output salim
+puts myName.sub 's', 'h'                 # Output halim
+puts myName * 4                          # Output ismail ismail ismail ismail
+puts myName.gsub! /([isil])/, '*'        # Output **ma**
+puts myName.gsub! /([isma])/, '__'       # Output __________l
+puts myName.chr                          # Output i
+puts "ismailSalmi1992" =~ /\d/           # Output 11
+puts myName <=> "   ismail   "           # Output 1
+puts myName <=> "salmi"                  # Output -1
+puts myName.eql? "ismail"                # Output true
+puts myName.eql? "   ismail   "          # Output false
+puts myName << "Salmi"                   # Output ismailSalmi
+puts myName.center 16                    # Add spaces 
+puts myName.center(50, "50")             # Output 5050505050505050505050ismail5050505050505050505050
+puts myName.strip.center(7, "Salmi")     # Output ismailS
+puts myName === "ismail"                 # Output true        
+puts myName === "   ismail   "           # Output false   
+puts myName == "ismail"                  # Output true    
+puts myName.hex                          # Output 0
+puts "-20161505".strip.hex               # Output -538318085
+puts myName.delete "is"                  # Output mal
+puts myName.inspect                      # Output "ismail"
+puts myName.concat "Salmi", 11           # Output ismailSalmi
+print myName.codepoints                  # Output [105, 115, 109, 97, 105, 108]
+puts myName.include? 'i'                 # Output true         
+puts myName.include? 'n'                 # Output false
+puts myName.each_char{|b| print b, ' ' } # Output i s m a i l ismail
+puts myName.class                        # Output String
